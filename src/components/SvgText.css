@@ -1,0 +1,24 @@
+/* styles.css */
+.text-path {
+	stroke-width: 0.5;
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+}
+.trigger-animation {
+	animation-name: textAnimation;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes textAnimation {
+	0% {
+		fill: transparent;
+		stroke-dashoffset: 300;
+	}
+	80% {
+		fill: transparent;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
